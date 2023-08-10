@@ -3,7 +3,7 @@
       <div className="flex flex-col min-h-screen bg-gray-100">
         {/* Header */}
         <header className="bg-blue-600 text-white p-4">
-          <h1 className="text-xl font-bold">Your App Name</h1>
+          <h1 className="text-xl font-bold m-a ">Your App Name</h1>
         </header>
 
         {/* Main Content */}
@@ -28,11 +28,6 @@
             {/* ... you can add more cards as needed */}
           </div>
         </main>
-
-        {/* Footer */}
-        <footer className="bg-gray-800 text-white p-4">
-          <p>&copy; 2023 Your Company</p>
-        </footer>
       </div>
     )
   }
