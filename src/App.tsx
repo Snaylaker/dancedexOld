@@ -31,7 +31,15 @@ export default function App() {
   )
 }
 
-function Card({ title, description, videoUrl }) {
+function Card({
+  title,
+  description,
+  videoUrl,
+}: {
+  title: string
+  description: string
+  videoUrl: string
+}) {
   return (
     <div className="rounded-lg overflow-hidden shadow-lg m-4 bg-white max-w-sm">
       <video className="w-full" controls>
