@@ -19,6 +19,12 @@ export default function App() {
             description="This is a sample description for the card component."
             videoUrl="unroll-back.mp4"
           />
+          <Card
+            title="Sample Card"
+            description="This is a sample description for the card component."
+            videoUrl="hand-fun.webm"
+          />
+
           {/* ... you can add more cards as needed */}
         </div>
       </main>
