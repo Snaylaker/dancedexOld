@@ -22,7 +22,7 @@ export default function App() {
           <Card
             title="Sample Card"
             description="This is a sample description for the card component."
-            videoUrl="hand-fun.webm"
+            videoUrl="hand-fun.mp4"
           />
 
           {/* ... you can add more cards as needed */}
@@ -40,7 +40,7 @@ export default function App() {
 function Card({
   title,
   description,
-  videoUrl,
+  videoUrl, 
 }: {
   title: string
   description: string
