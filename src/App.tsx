@@ -1,56 +1,52 @@
-import "./App.css"
-
-function App() {
+export default function App() {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <header className="bg-gray-800 text-white py-4 text-center">
-        <h1 className="text-2xl">Movie Landing Page</h1>
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      {/* Header */}
+      <header className="bg-blue-600 text-white p-4">
+        <h1 className="text-xl font-bold">Your App Name</h1>
       </header>
-      <div className="container mx-auto py-8 px-4">
-        <h2 className="text-xl font-semibold mb-4">Popular Movies</h2>
-        <div className="flex flex-wrap gap-4">
-          <DanceCard
-            title="title1"
-            description="description"
-            link="youtube-video-gif.gif"
+
+      {/* Main Content */}
+      <main className="flex-grow p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Card
+            title="Sample Card"
+            description="This is a sample description for the card component."
+            videoUrl="leg-swipe.mp4"
           />
-          <DanceCard
-            title="title1"
-            description="description"
-            link="youtube-video-gif.gif"
+          <Card
+            title="Sample Card"
+            description="This is a sample description for the card component."
+            videoUrl="unroll-back.mp4"
           />
-          <DanceCard
-            title="title1"
-            description="description"
-            link="youtube-video-gif.gif"
-          />
-          {/* Add more movie cards here */}
+          {/* ... you can add more cards as needed */}
         </div>
-      </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white p-4">
+        <p>&copy; 2023 Your Company</p>
+      </footer>
     </div>
   )
 }
 
-const DanceCard = ({
-  title,
-  description,
-  link,
-}: {
-  title: string
-  description: string
-  link: string
-}) => {
+function Card({ title, description, videoUrl }) {
   return (
-    <div className="bg-white rounded shadow">
-      <div>
-        <iframe src={link} width={"100%"} height={"100%"} ></iframe>
+    <div className="rounded-lg overflow-hidden shadow-lg m-4 bg-white max-w-sm">
+      <video className="w-full" controls>
+        <source src={videoUrl} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-2">{title}</div>
+        <p className="text-gray-700 text-base">{description}</p>
       </div>
-      <div className="p-4">
-        <h3 className="text-lg font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm">{description}</p>
+      <div className="px-6 py-4">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Read More
+        </button>
       </div>
     </div>
   )
 }
-
-export default App
