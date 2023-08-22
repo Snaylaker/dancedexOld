@@ -51,3 +51,10 @@ probably just for it to be hosted somewhere and and have a decent display on mob
 - [ ] Choose a hosting platform (e.g., Netlify or Vercel) for the website.
 - [ ] Deploy the website to the chosen platform.
 - [ ] Ensure users can access the site via browsers on mobile devices.
+# Todo 
+- [ ] Auth 
+- [ ] Maybe more moves  
+- [ ] Option import moves from files 
+- [ ] Add description
+- [ ] Add done/ in progress
+- [ ] Add tags 
