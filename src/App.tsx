@@ -1,12 +1,9 @@
 export default function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Header */}
       <header className="bg-blue-600 text-white p-4">
         <h1 className="text-xl font-bold m-a ">Your App Name</h1>
       </header>
-
-      {/* Main Content */}
       <main className="flex-grow p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl m-auto">
           <Card
@@ -24,8 +21,6 @@ export default function App() {
             description="This is a sample description for the card component."
             videoUrl="hand-fun.mp4"
           />
-
-          {/* ... you can add more cards as needed */}
         </div>
       </main>
     </div>
