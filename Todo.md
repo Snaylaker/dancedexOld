@@ -23,38 +23,42 @@ probably just for it to be hosted somewhere and and have a decent display on mob
 
 ---
 
-### Love me some chatgpt
+# To-Do List for Dance Moves Learning Platform
 
-### Homepage:
+## Phase 1: MVP Development
 
+### Design & Layout
+- [ ] Design a mobile-optimized homepage.
 - [ ] Create a clean and simple layout optimized for mobile devices.
-- [ ] Display a list of dance moves (videos) as cards.
 
-### Dance Move Cards:
+### Dance Move Cards
+- [ ] Design dance move cards with embedded video players.
+- [ ] Display a list of dance moves (videos) as cards on the homepage.
+- [ ] Include the move's name or title on each card.
 
-- [ ] Design each card with a video player showing the dance move from a YouTube clip.
-- [ ] Include the move's name or title on the card.
-- [ ] Add an option for users to mark the move as learned.
+### User Interaction
+- [ ] Make dance move cards clickable to watch the video clip.
+- [ ] Implement a checkbox on each card for users to mark a dance move as learned.
 
-### Basic User Interaction:
-
-- [ ] Enable users to click on a dance move card to watch the video clip.
-- [ ] Implement a checkbox for users to mark a dance move as learned.
-
-### Responsive Design:
-
-- [ ] Ensure the website layout works seamlessly on mobile devices.
+### Responsive Design
+- [x] Test the website layout on various mobile devices to ensure responsiveness.
 - [ ] Optimize the size and playback of videos for mobile screens.
 
-### Hosted Deployment:
+### Deployment
+- [x] Choose a hosting platform (e.g., Netlify or Vercel).
+- [x] Deploy the MVP to the chosen platform.
+- [x] Ensure users can access the site via browsers on mobile devices.
 
-- [ ] Choose a hosting platform (e.g., Netlify or Vercel) for the website.
-- [ ] Deploy the website to the chosen platform.
-- [ ] Ensure users can access the site via browsers on mobile devices.
-# Todo 
-- [ ] Auth 
-- [ ] Maybe more moves  
-- [ ] Option import moves from files 
-- [ ] Add description
-- [ ] Add done/ in progress
-- [ ] Add tags 
+## Phase 2: Advanced Features & Enhancements
+
+### User Authentication
+- [ ] Research and choose an authentication method/platform.
+- [ ] Implement secure login and registration system.
+
+### CRUD Operations
+- [ ] Implement functionality to add new dance moves.
+- [ ] Add options to edit or delete existing moves.
+- [ ] Design a system to import moves from files.
+
+### Enhanced Card Features
+- [ ] Add
